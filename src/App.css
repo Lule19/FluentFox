@@ -1,0 +1,116 @@
+
+/* Custom CSS for the navbar */
+.custom-navbar {
+  background-color: rgba(199,89,40,255) !important; /* Set background color to orange */
+  font-family: 'Arial Black', sans-serif; /* Set font family */
+  font-weight: bold; /* Make the font bold */
+}
+
+.custom-navbar .navbar-brand, 
+.custom-navbar .nav-link {
+  color: white !important; /* Make text white for better contrast */
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-color: white; /* Make the toggle icon white */
+}
+
+.custom-navbar .nav-dropdown-item {
+  color: black; /* Optional: Adjust dropdown text color */
+}
+
+
+
+
+
+
+.custom-image {
+  max-width: 100%; /* Slika neće prelaziti širinu svog kontejnera */
+  height: 300px;    /* Visina se prilagođava u skladu sa širinom */
+
+}
+
+
+
+
+
+
+
+
+/* Za centriranje container-a */
+.centriranje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Za centriranje slika i teksta u kolonama */
+.custom-image {
+  width: 80%; /* Možete promeniti ovu vrednost kako biste smanjili slike */
+  height: auto;
+  margin-bottom: 15px; /* Razmak između slike i imena */
+}
+
+/* Za naslove ispod slika */
+h2 {
+  font-weight: bold; /* Povećavamo debljinu fonta */
+  margin-top: 10px;  /* Razmak između slike i naslova */
+}
+
+/* Za centriranje sadržaja unutar reda */
+.row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Za bolju raspodelu prostora između kolona */
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Razmak između kolona */
+}
+
+.lokacija{
+  margin-bottom: 200px;
+}
+
+
+
+
+/* Stil za div koji sadrži ikone */
+.ikonice {
+  display: flex;
+  justify-content: center;  /* Centriranje ikona horizontalno */
+  align-items: center;  /* Centriranje ikona vertikalno */
+  gap: 15px;  /* Razmak između ikona */
+  margin-top: 20px;  /* Razmak od vrha */
+}
+
+/* Stil za svaku ikonu */
+.ikonice a {
+  text-decoration: none;  /* Uklanja podvlačenje */
+  transition: transform 0.3s ease, color 0.3s ease;  /* Efekti pri prelasku kursora */
+}
+
+/* Hover efekti za ikone */
+.ikonice a:hover {
+  transform: scale(1.5);  /* Uvećava ikonu pri prelasku kursora */
+}
+
+/* Stil za Facebook ikonu */
+.ikonice .fa-facebook-f {
+  font-size: 2rem;  /* Veličina ikone */
+  color: #3b5998;  /* Facebook plava boja */
+}
+
+/* Stil za Instagram ikonu */
+.ikonice .fa-instagram {
+  font-size: 2rem;  /* Veličina ikone */
+  color: #E4405F;  /* Instagram crvena boja */
+}
