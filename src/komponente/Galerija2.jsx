@@ -13,7 +13,7 @@ import image8 from '../asets/8.jpg';
 // Lista slika
 const images = [image1, image2, image3, image4, image5, image6, image7 ,image8];
 
-const Gallery = () => {
+const Gallery2 = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(null);
 
   // Funkcija za otvaranje galerije
@@ -56,7 +56,7 @@ const Gallery = () => {
 
   return (
     <div className="container mt-5">
-      <h2 style={{ color: 'rgba(39,38,98,255)' }} className="text-center mb-4">Posebni momenti sa nasih časova</h2>
+      
       <div className="row">
         {images.map((image, index) => (
           <div key={index} className="col-md-3 mb-4">
@@ -144,4 +144,4 @@ const closeButtonStyles = {
   zIndex: 1001,
 };
 
-export default Gallery;
+export default Gallery2;

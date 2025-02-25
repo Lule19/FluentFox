@@ -10,6 +10,8 @@ import '../App.css';  // or './CustomNav.css' if your CSS is in the same folder
 
 import logo2 from '../asets/logo2.jpg';
 
+import { Link } from "react-router";
+
 
 
 
@@ -17,7 +19,7 @@ const CustomNav = () => {
     return(
       <Navbar expand="lg" className="custom-navbar">
       <Container>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
                     <img
                         src={logo2}  // Koristite importovanu sliku
                         alt="Logo"
@@ -29,20 +31,13 @@ const CustomNav = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                  <Nav.Link href="#home">O nama</Nav.Link>
-                  <Nav.Link href="#link">Jezici</Nav.Link>
-                  <Nav.Link href="#nastavnice">Nastavnice</Nav.Link>
-                  <Nav.Link href="#link">Galerija</Nav.Link>
-                  <Nav.Link href="#link">Cenovnik</Nav.Link>
-                  <Nav.Link href="#link">Kontakt</Nav.Link>
-                  <Nav.Link href="#link">Lokacija</Nav.Link>
-                  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                      <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                      <NavDropdown.Divider />
-                      <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                  </NavDropdown>
+                  <Nav.Link as={Link} to="/">O nama</Nav.Link>
+                  <Nav.Link as={Link} to="/jezici">Kursevi</Nav.Link>
+                  <Nav.Link href="/#nastavnice">Predavaci</Nav.Link>
+                  <Nav.Link as={Link} to="/galerija">Galerija</Nav.Link>
+                  <Nav.Link as={Link} to="/kontakt">Kontakt</Nav.Link>
+                  <Nav.Link as={Link} to="/lokacija">Lokacija</Nav.Link>
+                  
               </Nav>
           </Navbar.Collapse>
       </Container>

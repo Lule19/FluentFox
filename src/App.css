@@ -1,8 +1,8 @@
 
 /* Custom CSS for the navbar */
 .custom-navbar {
-  background-color: rgba(199,89,40,255) !important; /* Set background color to orange */
-  font-family: 'Arial Black', sans-serif; /* Set font family */
+  background-color: #c65A28 !important; /* Set background color to orange */
+  font-family: 'POPPINS', sans-serif; /* Set font family */
   font-weight: bold; /* Make the font bold */
 }
 
@@ -45,6 +45,9 @@
   flex-direction: column;
   text-align: center;
   margin-top: 40px;
+
+
+  font-family: 'POPPINS', sans-serif; /* Set font family */
 }
 
 /* Za centriranje slika i teksta u kolonama */
@@ -76,9 +79,7 @@ h2 {
   margin-bottom: 20px; /* Razmak između kolona */
 }
 
-.lokacija{
-  margin-bottom: 200px;
-}
+
 
 
 
@@ -113,4 +114,48 @@ h2 {
 .ikonice .fa-instagram {
   font-size: 2rem;  /* Veličina ikone */
   color: #E4405F;  /* Instagram crvena boja */
+}
+
+
+
+
+.body {
+  font-family: 'POPPINS', sans-serif;
+}
+
+.font {
+  font-family: 'POPPINS', sans-serif;
+}
+
+
+
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly; /* Distributes cards with equal spacing */
+  gap: 20px; /* Adds space between the cards */
+  flex-wrap: wrap; /* Allows wrapping of cards to the next row if the screen size is small */
+  justify-content: center; /* Centers the cards horizontally */
+  margin-top: 20px; /* Adds top margin */
+}
+
+.card-container .card {
+  margin: 0 auto; /* Centers each card individually */
+}
+
+
+.card-image {
+  height: 200px; /* Set fixed height for all card images */
+  object-fit: cover; /* Ensure the image covers the area without distorting */
+  width: 100%; /* Makes sure the image stretches to fill the width */
+}
+
+.card-dugme{
+background-color: #c65A28!important;
+border: 1px, solid,  black!important;
+
+}
+
+h2, .card, .card-img-top {
+  font-family: 'Poppins', sans-serif;
 }
