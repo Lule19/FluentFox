@@ -9,9 +9,20 @@ import image5 from '../asets/5.jpg';
 import image6 from '../asets/6.jpg';
 import image7 from '../asets/7.jpg';
 import image8 from '../asets/8.jpg';
+import image9 from "../asets/9.jpg";
+import image10 from "../asets/10.jpg";
+
+import image11 from '../asets/11.jpg';
+import image12 from '../asets/12.jpg';
+import image13 from '../asets/13.jpg';
+import image14 from "../asets/14.jpg";
+import image15 from "../asets/15.jpg";
+
+import image16 from "../asets/16.jpg";
+
 
 // Lista slika
-const images = [image1, image2, image3, image4, image5, image6, image7 ,image8];
+const images = [image1, image2, image3, image4, image5, image6, image7 ,image8, image9, image10, image11,image12,image13,image14,image15,image16];
 
 const Gallery2 = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(null);
@@ -83,7 +94,9 @@ const Gallery2 = () => {
               style={{
                 maxWidth: '90%',
                 maxHeight: '80vh',
-                objectFit: 'contain'
+                objectFit: 'contain',
+                display: 'block',
+                margin: 'auto'  // Obezbeđuje centriranje slike
               }}
             />
             <button onClick={goToPrevImage} style={prevButtonStyles}>&lt;</button>

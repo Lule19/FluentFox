@@ -9,9 +9,15 @@ import image5 from '../asets/5.jpg';
 import image6 from '../asets/6.jpg';
 import image7 from '../asets/7.jpg';
 import image8 from '../asets/8.jpg';
+import image9 from '../asets/9.jpg';
+import image10 from '../asets/10.jpg';
+
+import image16 from "../asets/16.jpg";
+
+
 
 // Lista slika
-const images = [image1, image2, image3, image4, image5, image6, image7 ,image8];
+const images = [image1, image2, image6, image5, image3, image9, image10 ,image16];
 
 const Gallery = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(null);
@@ -55,8 +61,9 @@ const Gallery = () => {
   }, [currentImageIndex]);
 
   return (
+    <div className='font'>
     <div className="container mt-5">
-      <h2 style={{ color: 'rgba(39,38,98,255)' }} className="text-center mb-4">Posebni momenti sa nasih časova</h2>
+      <h1 style={{ color: 'rgba(39,38,98,255)' }} className="text-center mb-4">Posebni momenti sa nasih časova</h1>
       <div className="row">
         {images.map((image, index) => (
           <div key={index} className="col-md-3 mb-4">
@@ -72,6 +79,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
+      </div>
 
       {/* Lightbox galerija */}
       {currentImageIndex !== null && (
@@ -83,7 +91,9 @@ const Gallery = () => {
               style={{
                 maxWidth: '90%',
                 maxHeight: '80vh',
-                objectFit: 'contain'
+                objectFit: 'contain',
+                display: 'block',
+                margin: 'auto'  // Obezbeđuje centriranje slike
               }}
             />
             <button onClick={goToPrevImage} style={prevButtonStyles}>&lt;</button>

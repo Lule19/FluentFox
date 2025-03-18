@@ -11,7 +11,7 @@ import spanski from "../asets/spanski.jpg";
 
 import "../App.css";
 
-function Jezici() {
+function JeziciOdrasli() {
   return (
     <div className="font">
       <div
@@ -25,43 +25,40 @@ function Jezici() {
           padding: "20px",
         }}
       >
-
-    <div className="">
-       <h1 style={{ color: 'rgba(39,38,98,255)', textAlign: 'center' }}><strong>Programi za decu</strong> </h1>
+       <div className="">
+       <h1 style={{ color: 'rgba(39,38,98,255)', textAlign: 'center' }}><strong>Programi za odrasle</strong> </h1>
         <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
-        Idealno vreme za početak učenja stranih jezika kod dece je sa 4 godine, kada su
-dovoljno odrasla da je moguće primeniti odgovarajuću metodiku u nastavi, ali i
-dalje dovoljno mala da uče kroz igru i zabavu, ne shvatajući to kao ozbiljan i težak
-zadatak.
-<br></br>
-Kada je reč o školarcima, FluentFox nudi kompletan obrazovni program za sve
-razrede osnovne škole, pomažući učenicima da savladaju školsko gradivo,
-poboljšaju svoje ocene i održe visok nivo uspeha. Takođe, razvijaju se njihove
-socijalne i komunikativne veštine, što im pomaže da se lakše uključe u društvo i
-budu samostalniji.
+        Naša škola stranih jezika nudi širok spektar kurseva, od početnih do naprednih,
+prilagođenih potrebama odraslih polaznika, uključujući i studente. Bilo da želite
+da unapredite svoje jezičke veštine iz poslovnih razloga, putovanja, ili lične
+ambicije, naši programi dizajnirani su tako da odgovore na Vaše ciljeve.
+Kroz interaktivne metode nastave, kao i rad u malim grupama, učimo vas kako da
+efikasno komunicirate na engleskom, španskom i nemačkom jeziku. Nastava je
+dinamična i usmerena na praktičnu primenu stranih jezika u svakodnevnim
+situacijama.
     </p>
 
 
     </div>
 
-
-
         {/* Bootstrap Grid System */}
         <Container>
+          
+
           <Row className="justify-content-center">
             {/* Prvi red */}
             <Col xs={12} md={4} className="d-flex justify-content-center mb-4">
               <Card style={{ width: "23rem" }}>
                 <Card.Img variant="top" src={engleski} className="card-image" />
                 <Card.Body>
-                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Engleski jezik za decu</strong></Card.Title>
+                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Engleski jezik za odrasle</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                  Trajanje programa tokom cele školske godine <br></br>
+                  Trajanje programa od 4 do 6 meseci <br></br>
                   
-                  Trajanje časova : <br></br>
-                  Deca predškolskog uzrasta 45min <br></br>
-                  Deca školskog uzrasta 1h <br></br>
-                  Dva časa nedeljno
+                  Trajanje časa 1h  <br></br>
+                  Dva časa nedeljno <br></br>
+                  <br></br>
+                  
                   
                   
                   </Card.Text>
@@ -74,14 +71,13 @@ budu samostalniji.
               <Card style={{ width: "23rem" }}>
                 <Card.Img variant="top" src={spanski} className="card-image" />
                 <Card.Body>
-                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Španski jezik za decu</strong></Card.Title>
+                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Španski jezik za odrasle</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                  Trajanje programa tokom cele školske godine <br></br>
+                  Trajanje programa od 4 do 6 meseci <br></br>
                   
-                  Trajanje časova: <br></br>
-                  Deca školskog uzrasta 1h <br></br>
-
-                  Dva časa nedeljno
+                  Trajanje časa 1h  <br></br>
+                  Dva časa nedeljno<br></br>
+                  <br></br>
                   </Card.Text>
                   
                 </Card.Body>
@@ -92,12 +88,13 @@ budu samostalniji.
               <Card style={{ width: "23rem" }}>
                 <Card.Img variant="top" src={nemacki} className="card-image" />
                 <Card.Body>
-                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Nemački jezik za decu</strong></Card.Title>
+                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Nemački jezik za odrasle</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                    Trajanje programa tokom cele školske godine <br></br>
-                    Trajanje casova: <br></br>
-                    Deca školskog uzrasta 1h <br></br>
-                    Dva časa nedeljno
+                  Trajanje programa od 3 do 4 meseca <br></br>
+                  
+                  Trajanje časa 2h  <br></br>
+                  Dva dvočasa nedeljno<br></br>
+                  <br></br>
                   </Card.Text>
                   
                 </Card.Body>
@@ -105,11 +102,16 @@ budu samostalniji.
             </Col>
           </Row>
 
+
+
          
+
+            
+          
         </Container>
       </div>
     </div>
   );
 }
 
-export default Jezici;
+export default JeziciOdrasli;

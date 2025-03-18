@@ -21,7 +21,7 @@ function Galerija() {
         }}
       >
 
-<h1 style={{ color: "rgba(39,38,98,255)" }}>Galerija slika
+<h1 style={{ color: "rgba(39,38,98,255)" }}><strong>Galerija slika</strong>
 </h1>
 
 <Gallery2></Gallery2>
