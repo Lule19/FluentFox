@@ -69,9 +69,9 @@ const CustomFut = () => {
               <div className="footer-content">
               <p>Ponedeljak: 17:30 - 21:00</p>
               <p>Utorak: 18:30 - 22:00</p>
-              <p>Sreda: 11:00 - 19:00</p>
+              <p>Sreda: 11:00 - 19:30</p>
               <p>Četvrtak: 18:30 - 22:00</p>
-              <p>Petak: 11:00 - 19:00</p>
+              <p>Petak: 11:00 - 19:30</p>
               <p>Subota: neradan dan</p>
               <p>Nedelja: neradan dan</p>
             </div>

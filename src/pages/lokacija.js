@@ -21,7 +21,7 @@ function Lokacija() {
           textAlign: "center", // Tekst centriran
         }}
       >
-        <h1 style={{ color: 'rgba(39,38,98,255)' }}><strong>Lokacija našeg centra</strong></h1>
+        <h1 style={{ color: 'rgba(39,38,98,255)' }}><strong>Lokacija naše škole</strong></h1>
 
         {/* Kontakt informacije - prvo */}
         <div

@@ -5,9 +5,9 @@ import Card from "react-bootstrap/Card";
 
 import lija7 from "../asets/lija7.jpg";
 import lija2 from "../asets/lija2.jpg";
-import engleski from "../asets/engleski.jpg";
-import nemacki from "../asets/nemacki.jpg";
-import spanski from "../asets/spanski.jpg";
+import engleski from "../asets/engleskiO.jpg";
+import nemacki from "../asets/nemackiO.jpg";
+import spanski from "../asets/spanskiO.jpg";
 
 import "../App.css";
 

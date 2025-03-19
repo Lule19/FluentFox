@@ -54,7 +54,7 @@ function Kontakti() {
       }}
     >
       <h1 style={{ marginBottom: "20px", color: "rgba(39,38,98,255)" }}>
-        <strong>Kontaktiraj nas</strong>
+        <strong>Kontaktirajte nas</strong>
       </h1>
 
       <h3 style={{color: "rgba(39,38,98,255)"}} >Pošaljite nam poruku putem forme</h3>
@@ -72,7 +72,7 @@ function Kontakti() {
         <label><strong>Poruka</strong></label>
         <textarea name="message" value={formData.message} onChange={handleChange} required />
 
-        <button type="submit">Pošalji</button>
+        <button type="submit">Pošalji poruku</button>
       </form>
 
       {/* Prikaz poruke o uspehu ili grešci */}

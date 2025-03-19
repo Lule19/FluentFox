@@ -5,7 +5,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 
-import myImage from './asets/naslovnaN.jpg';
+import myImage from './asets/naslovnaN2.jpg';
 import milica from './asets/milicaN.jpg';
 import jelisaveta from './asets/jelisavetaN.jpg';
 import irena from './asets/irenaN.jpg';
@@ -16,7 +16,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import image9 from "./asets/9.jpg";
 import image10 from "./asets/10.jpg";
 import image5 from "./asets/5.jpg";
-import onlineN from "./asets/onlineN.jpg";
+import image6 from "./asets/6.jpg";
+import onlineN from "./asets/onlineFF.jpg";
 
 
 import CustomFut from "./komponente/CustomFut";
@@ -79,12 +80,12 @@ function App() {
   <Carousel.Item className="carousel-stvar">
     <img
       className="d-block"
-      src={image5}
+      src={image6}
       alt="First slide"
       style={{
         objectFit: "cover",
         width: "100vw",
-        height: "520px",
+        height: "620px",
       }}
     />
     <Carousel.Caption className="carousel-opis">
@@ -101,7 +102,7 @@ function App() {
       style={{
         objectFit: "cover",
         width: "100vw",
-        height: "520px",
+        height: "620px",
       }}
     />
     <Carousel.Caption className="carousel-opis">
@@ -118,7 +119,7 @@ function App() {
       style={{
         objectFit: "cover",
         width: "100vw",
-        height: "520px",
+        height: "620px",
       }}
     />
     <Carousel.Caption className="carousel-opis">
