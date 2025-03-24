@@ -20,9 +20,13 @@ import image15 from "../asets/15.jpg";
 
 import image16 from "../asets/16.jpg";
 
+import image20 from "../asets/slikaOdrasli1.jpg";
+import image21 from "../asets/slikaOdrasli2.jpg";
+
+
 
 // Lista slika
-const images = [image1, image2, image3, image4, image5, image6, image7 ,image8, image9, image10, image11,image12,image13,image14,image15,image16];
+const images = [image1, image2, image3, image4, image5, image6, image7 ,image8, image9, image10, image11,image12,image13,image14,image15,image16, image20, image21];
 
 const Gallery2 = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(null);

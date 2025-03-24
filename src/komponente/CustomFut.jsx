@@ -68,10 +68,10 @@ const CustomFut = () => {
               <h6 className="text-uppercase mb-4 font-weight-bold"><strong>Radno vreme</strong></h6>
               <div className="footer-content">
               <p>Ponedeljak: 17:30 - 21:00</p>
-              <p>Utorak: 18:30 - 22:00</p>
-              <p>Sreda: 11:00 - 19:30</p>
-              <p>Četvrtak: 18:30 - 22:00</p>
-              <p>Petak: 11:00 - 19:30</p>
+              <p>Utorak: 18:45 - 22:15</p>
+              <p>Sreda: 12:30 - 22:15</p>
+              <p>Četvrtak: 18:45 - 22:15</p>
+              <p>Petak: 12:30 - 19:30</p>
               <p>Subota: neradan dan</p>
               <p>Nedelja: neradan dan</p>
             </div>

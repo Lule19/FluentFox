@@ -58,7 +58,7 @@ budu samostalniji.
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
                   Trajanje programa tokom cele školske godine <br></br>
                   
-                  Trajanje časova : <br></br>
+                  Trajanje časova: <br></br>
                   Deca predškolskog uzrasta 45min <br></br>
                   Deca školskog uzrasta 1h <br></br>
                   Dva časa nedeljno

@@ -69,7 +69,9 @@ const CustomNav = () => {
                         >
                             <NavDropdown.Item as={Link} to="/jezici" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>Deca</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/jeziciOdrasli" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>Odrasli</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/onlineNastava" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>Online nastava</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/jeziciCambridge" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>Cambridge ispiti</NavDropdown.Item>
+                           
                            
                         </NavDropdown>
 

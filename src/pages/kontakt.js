@@ -72,7 +72,7 @@ function Kontakti() {
         <label><strong>Poruka</strong></label>
         <textarea name="message" value={formData.message} onChange={handleChange} required />
 
-        <button type="submit">Pošalji poruku</button>
+        <button type="submit">Pošaljite poruku</button>
       </form>
 
       {/* Prikaz poruke o uspehu ili grešci */}

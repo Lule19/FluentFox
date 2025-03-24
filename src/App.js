@@ -17,7 +17,12 @@ import image9 from "./asets/9.jpg";
 import image10 from "./asets/10.jpg";
 import image5 from "./asets/5.jpg";
 import image6 from "./asets/6.jpg";
-import onlineN from "./asets/onlineFF.jpg";
+import onlineN from "./asets/laptopfluentfox.jpg";
+
+import image20 from "./asets/slikaOdrasli1.jpg";
+import image21 from "./asets/slikaOdrasli2.jpg";
+
+
 
 
 import CustomFut from "./komponente/CustomFut";
@@ -36,6 +41,8 @@ import Nastava from "./pages/nastava";
 import JeziciOdrasli from "./pages/jeziciOdrasli";
 import JeziciCambridge from "./pages/jeziciCambridge";
 import JeziciDaf from "./pages/jeziciDaf";
+import OnlineNastava from "./pages/onlineNastava";
+
 
 import NotFound from "./NotFound"; 
 
@@ -78,6 +85,7 @@ function App() {
   <Carousel interval={4000} className="carousel-fade">
 
   <Carousel.Item className="carousel-stvar">
+    <a href="/jezici">
     <img
       className="d-block"
       src={image6}
@@ -88,6 +96,7 @@ function App() {
         height: "620px",
       }}
     />
+    </a>
     <Carousel.Caption className="carousel-opis">
       <h3>Programi za decu</h3>
       <p>Programi prilagođeni svim uzrastima</p>
@@ -95,6 +104,7 @@ function App() {
   </Carousel.Item>
 
   <Carousel.Item className="carousel-stvar">
+    <a href="/jeziciOdrasli">
     <img
       className="d-block"
       src={image9}
@@ -105,6 +115,7 @@ function App() {
         height: "620px",
       }}
     />
+    </a>
     <Carousel.Caption className="carousel-opis">
       <h3>Programi za odrasle</h3>
       <p>Programi za studente i zaposlene</p>
@@ -112,6 +123,7 @@ function App() {
   </Carousel.Item>
 
   <Carousel.Item className="carousel-stvar">
+    <a href="/jeziciCambridge">
     <img
       className="d-block"
       src={onlineN}
@@ -122,6 +134,7 @@ function App() {
         height: "620px",
       }}
     />
+    </a>
     <Carousel.Caption className="carousel-opis">
       <h3>Online programi</h3>
       <p>Učite iz udobnosti Vašeg doma</p>
@@ -233,6 +246,7 @@ function App() {
           <Route path="/jeziciOdrasli" element={<JeziciOdrasli />} />
           <Route path="/jeziciCambridge" element={<JeziciCambridge />} />
           <Route path="/jeziciDaf" element={<JeziciDaf />} />
+          <Route path="/onlineNastava" element={<OnlineNastava />} />
           <Route path="*" element={<NotFound />} />
           
         </Routes>
