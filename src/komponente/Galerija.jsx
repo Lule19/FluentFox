@@ -66,7 +66,7 @@ const Gallery = () => {
   return (
     <div className='font'>
     <div className="container mt-5">
-      <h1 style={{ color: 'rgba(39,38,98,255)' }} className="text-center mb-4">Posebni momenti sa nasih časova</h1>
+      <h1 style={{ color: 'rgba(39,38,98,255)' }} className="text-center mb-4">Posebni momenti sa naših časova</h1>
       <div className="row">
         {images.map((image, index) => (
           <div key={index} className="col-md-3 mb-4">

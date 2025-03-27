@@ -19,8 +19,7 @@ import image5 from "./asets/5.jpg";
 import image6 from "./asets/6.jpg";
 import onlineN from "./asets/laptopfluentfox.jpg";
 
-import image20 from "./asets/slikaOdrasli1.jpg";
-import image21 from "./asets/slikaOdrasli2.jpg";
+
 
 
 
@@ -96,11 +95,12 @@ function App() {
         height: "620px",
       }}
     />
-    </a>
+    
     <Carousel.Caption className="carousel-opis">
       <h3>Programi za decu</h3>
       <p>Programi prilagođeni svim uzrastima</p>
     </Carousel.Caption>
+    </a>
   </Carousel.Item>
 
   <Carousel.Item className="carousel-stvar">
@@ -115,15 +115,17 @@ function App() {
         height: "620px",
       }}
     />
-    </a>
+    
     <Carousel.Caption className="carousel-opis">
       <h3>Programi za odrasle</h3>
       <p>Programi za studente i zaposlene</p>
     </Carousel.Caption>
+
+    </a>
   </Carousel.Item>
 
   <Carousel.Item className="carousel-stvar">
-    <a href="/jeziciCambridge">
+    <a href="/onlineNastava">
     <img
       className="d-block"
       src={onlineN}
@@ -134,11 +136,12 @@ function App() {
         height: "620px",
       }}
     />
-    </a>
+    
     <Carousel.Caption className="carousel-opis">
       <h3>Online programi</h3>
       <p>Učite iz udobnosti Vašeg doma</p>
     </Carousel.Caption>
+    </a>
   </Carousel.Item>
 </Carousel>
 

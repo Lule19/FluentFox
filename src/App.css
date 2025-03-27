@@ -208,7 +208,7 @@ h2 {
 
 
 .card-image {
-  height: 200px; /* Set fixed height for all card images */
+  height: 350px; /* Set fixed height for all card images */
   object-fit: fill; /* Ensure the image covers the area without distorting */
   width: 100%; /* Makes sure the image stretches to fill the width */
 }

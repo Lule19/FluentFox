@@ -53,9 +53,9 @@ situacijama.
                 <Card.Body>
                   <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Engleski jezik za odrasle</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                  Trajanje programa od 4 do 6 meseci <br></br>
+                  Trajanje programa <strong>od 4 do 6 meseci </strong><br></br>
                   
-                  Trajanje časa 1h  <br></br>
+                  Trajanje časa <strong>1h</strong>  <br></br>
                   Dva časa nedeljno <br></br>
                   <br></br>
                   
@@ -73,9 +73,9 @@ situacijama.
                 <Card.Body>
                   <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Španski jezik za odrasle</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                  Trajanje programa od 4 do 6 meseci <br></br>
+                  Trajanje programa <strong>od 4 do 6 meseci</strong> <br></br>
                   
-                  Trajanje časa 1h  <br></br>
+                  Trajanje časa <strong>1h</strong>  <br></br>
                   Dva časa nedeljno<br></br>
                   <br></br>
                   </Card.Text>
@@ -90,9 +90,9 @@ situacijama.
                 <Card.Body>
                   <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Nemački jezik za odrasle</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                  Trajanje programa od 3 do 4 meseca <br></br>
+                  Trajanje programa <strong>od 3 do 4 meseca</strong> <br></br>
                   
-                  Trajanje časa 2h  <br></br>
+                  Trajanje časa <strong>2h</strong>  <br></br>
                   Dva dvočasa nedeljno<br></br>
                   <br></br>
                   </Card.Text>

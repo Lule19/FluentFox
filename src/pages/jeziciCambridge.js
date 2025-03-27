@@ -31,6 +31,8 @@ function JeziciCambridge() {
 
 <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
 U FluentFox centru za strane jezike deca i odrasli se mogu pripremiti za polaganje sledećih međunarodno priznatih Cambridge ispita:
+<br></br>
+<br></br>
 <ul>
     <li>Pre A1 Starters</li>
     <li>A1 Movers</li>

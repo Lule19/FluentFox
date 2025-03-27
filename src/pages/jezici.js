@@ -56,11 +56,11 @@ budu samostalniji.
                 <Card.Body>
                   <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Engleski jezik za decu</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                  Trajanje programa tokom cele školske godine <br></br>
+                  Trajanje programa <strong>tokom cele školske godine</strong> <br></br>
                   
                   Trajanje časova: <br></br>
-                  Deca predškolskog uzrasta 45min <br></br>
-                  Deca školskog uzrasta 1h <br></br>
+                  Deca predškolskog uzrasta <strong>45min</strong> <br></br>
+                  Deca školskog uzrasta <strong>1h</strong> <br></br>
                   Dva časa nedeljno
                   
                   
@@ -76,10 +76,10 @@ budu samostalniji.
                 <Card.Body>
                   <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Španski jezik za decu</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                  Trajanje programa tokom cele školske godine <br></br>
+                  Trajanje programa <strong>tokom cele školske godine</strong> <br></br>
                   
                   Trajanje časova: <br></br>
-                  Deca školskog uzrasta 1h <br></br>
+                  Deca školskog uzrasta <strong>1h</strong> <br></br>
 
                   Dva časa nedeljno
                   </Card.Text>
@@ -94,9 +94,9 @@ budu samostalniji.
                 <Card.Body>
                   <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Nemački jezik za decu</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                    Trajanje programa tokom cele školske godine <br></br>
+                    Trajanje programa <strong>tokom cele školske godine</strong> <br></br>
                     Trajanje casova: <br></br>
-                    Deca školskog uzrasta 1h <br></br>
+                    Deca školskog uzrasta <strong>1h</strong> <br></br>
                     Dva časa nedeljno
                   </Card.Text>
                   

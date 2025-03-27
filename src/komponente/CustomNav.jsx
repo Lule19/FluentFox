@@ -47,7 +47,7 @@ const CustomNav = () => {
                         width="130"
                         height="145"
                     />
-                    FluentFox
+                    
                 </Navbar.Brand>
                 <Navbar.Toggle 
                     aria-controls="basic-navbar-nav" 
@@ -55,6 +55,7 @@ const CustomNav = () => {
                 />
                 <Navbar.Collapse id="basic-navbar-nav" in={isNavOpen}>
                     <Nav className="me-auto">
+                        <Nav.Link as={Link} to="/" onClick={handleNavigation}>Početna</Nav.Link>
                         <Nav.Link as={Link} to="/#onama" onClick={handleNavigation}>O nama</Nav.Link>
 
                         {/* Dropdown koji menja ponašanje u zavisnosti od uređaja */}
