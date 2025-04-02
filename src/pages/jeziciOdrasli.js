@@ -92,7 +92,7 @@ situacijama.
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
                   Trajanje programa <strong>od 3 do 4 meseca</strong> <br></br>
                   
-                  Trajanje časa <strong>2h</strong>  <br></br>
+                  Trajanje časa <strong>2h (dvočas)</strong>  <br></br>
                   Dva dvočasa nedeljno<br></br>
                   <br></br>
                   </Card.Text>

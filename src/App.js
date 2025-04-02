@@ -9,6 +9,7 @@ import myImage from './asets/naslovnaN2.jpg';
 import milica from './asets/milicaN.jpg';
 import jelisaveta from './asets/jelisavetaN.jpg';
 import irena from './asets/irenaN.jpg';
+import Ema from './asets/Ema.jpg';
 
 
 import Carousel from 'react-bootstrap/Carousel';
@@ -203,35 +204,28 @@ function App() {
 
               <div id="nastavnice" className="centriranje">
                 <div className="container mt-4">
-                  <h1 style={{ color: 'rgba(39,38,98,255)' }}>Predavači</h1>
-                  <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6' }}>U našoj školi trenutno su zaposlena tri predavača</p>
+                  <h1 style={{ color: 'rgba(39,38,98,255)' }}><strong>Predavači</strong></h1>
+                  <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6' }}>U našoj školi trenutno su zaposlena četiri predavača</p>
 
                   <Container>
-                    <Row className="justify-content-center text-center">
-                      <Col xs={6} md={4} className="d-flex flex-column align-items-center">
-                        <Image src={milica} roundedCircle className="custom-image" />
-                        <h2 style={{ color: 'rgba(39,38,98,255)' }}>Milica Ćirović</h2>
-                        <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6' }}>
-                          Španski jezik za decu, srednjoškolce i odrasle Engleski jezik za decu i odrasle
-                        </p>
-                      </Col>
 
-                      <Col xs={6} md={4} className="d-flex flex-column align-items-center">
-                        <Image src={jelisaveta} roundedCircle className="custom-image" />
-                        <h2 style={{ color: 'rgba(39,38,98,255)' }}>Jelisaveta Miladinović</h2>
-                        <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6' }}>
-                          Engleski jezik za srednjoškolce, studente i odrasle
-                        </p>
-                      </Col>
 
-                      <Col xs={6} md={4} className="d-flex flex-column align-items-center">
-                        <Image src={irena} roundedCircle className="custom-image" />
-                        <h2 style={{ color: 'rgba(39,38,98,255)' }}>Irena Mladenović</h2>
-                        <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6' }}>
-                          Nemački jezik za decu, srednjoškolce i odrasle
-                        </p>
-                      </Col>
-                    </Row>
+                  <Row className="justify-content-center text-center">
+  {[  
+    { src: milica, name: "Milica Ćirović", text: <>Španski jezik za decu, srednjoškolce i odrasle <br /> Engleski jezik za decu i odrasle</> },
+    { src: jelisaveta, name: "Jelisaveta Miladinović", text: "Engleski jezik za srednjoškolce, studente i odrasle" },
+    { src: irena, name: "Irena Mladenović", text: "Nemački jezik za decu, srednjoškolce i odrasle" },
+    { src: Ema, name: "Emilija Stanković", text: "Poslovni engleski" }
+  ].map((teacher, index) => (
+    <Col key={index} xs={12} sm={6} lg={3} className="d-flex flex-column align-items-center">
+      <Image src={teacher.src} roundedCircle className="custom-image" />
+      <h4 style={{ color: 'rgba(39,38,98,255)' }}><strong>{teacher.name}</strong></h4>
+      <p style={{ color: 'rgba(39,38,98,255)' }}>{teacher.text}</p>
+    </Col>
+  ))}
+</Row>
+
+
                   </Container>
                 </div>
               </div>

@@ -35,15 +35,15 @@ function OnlineNastava() {
                   <strong>Učenje iz udobnosti Vašeg doma</strong>
                 </Card.Title>
                 <Card.Text style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
-                  Naša škola stranih jezika nudi online programe engleskog i nemačkog jezika.
+                  Naša škola stranih jezika nudi online programe engleskog i nemačkog jezika. <br></br>
 
-                  Engleski jezik učimo u manjim grupama, dva puta nedeljno po sat vremena.
+                  Engleski jezik učimo u manjim grupama, dva puta nedeljno po sat vremena.<br></br>
 
-                  Časovi nemačkog jezika odvijaju se dva puta nedeljno po sat vremena ili dva puta nedeljno po dva sata (dvočasa).
+                  Časovi nemačkog jezika odvijaju se dva puta nedeljno po sat vremena ili dva puta nedeljno po dva sata (dvočasa). <br></br>
 
-                  Nastava je u popodnevnim terminima, kako bi bila pogodna za studente i zaposlene polaznike.
+                  Nastava je u popodnevnim terminima, kako bi bila pogodna za studente i zaposlene polaznike. <br></br>
 
-                  Učite engleski i nemački jezik u udobnosti svog doma uz podršku naših predavača!
+                  Učite engleski i nemački jezik u udobnosti svog doma uz podršku naših predavača! <br></br>
                 </Card.Text>
               </Card.Body>
             </Col>
