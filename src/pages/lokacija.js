@@ -6,21 +6,18 @@ import '../App.css';
 
 function Lokacija() {
   const [backgroundImage, setBackgroundImage] = useState(izlog);
+  const [showMobileImage, setShowMobileImage] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setBackgroundImage(lija7); // Mobilni ekrani
-      } else {
-        setBackgroundImage(izlog); // Desktop ekrani
-      }
+      const isMobile = window.innerWidth <= 768;
+      setBackgroundImage(isMobile ? lija7 : izlog);
+      setShowMobileImage(isMobile);
     };
 
-    // Pozivamo funkciju odmah i dodajemo event listener
     handleResize();
     window.addEventListener("resize", handleResize);
 
-    // Čistimo event listener pri unmount-u
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -65,6 +62,20 @@ function Lokacija() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
+
+        {/* Slika ispod mape samo na mobilnim uređajima */}
+        {showMobileImage && (
+          <img 
+            src={izlog} 
+            alt="Izlog" 
+            style={{ 
+              marginTop: "20px", 
+              width: "100%", 
+              maxWidth: "800px", 
+              borderRadius: "10px" 
+            }} 
+          />
+        )}
       </div>
     </div>
   );

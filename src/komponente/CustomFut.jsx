@@ -3,6 +3,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 import logo2 from "../asets/logo2.jpg";
+import logo4 from "../asets/logo4.jpg";
+import baner from "../asets/baner.jpg"
 import "../App.css";
 
 const CustomFut = () => {
@@ -19,13 +21,14 @@ const CustomFut = () => {
               <h6 className="text-uppercase mb-4 font-weight-bold"><strong>Pratite nas</strong></h6>
               
 
+              
+              
               <img className="logo"
-                        src={logo2}
+                        src={logo4}
                         alt="Logo"
-                        width="160"
+                        width="145"
                         height="160"
-                    />
-
+                />
 
 
               <div className='footer-sectionIkonice'>
@@ -42,6 +45,12 @@ const CustomFut = () => {
                 </div>
 
 
+                <img className="baner"
+                        src={baner}
+                        alt="Logo"
+                        width="155"
+                        height="55"
+                />
 
 
             </div>

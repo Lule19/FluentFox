@@ -275,7 +275,7 @@ h2, .card, .card-img-top {
 
   .carousel-opis {
     width: 100%;
-    height: 100px;
+    height: 110px;
   }
 
   .carousel-opis h3 {
@@ -385,6 +385,19 @@ h2, .card, .card-img-top {
   filter: drop-shadow(5px 5px 10px #000000b7 );
 }
 
+.baner {
+  
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+}
+
+@media (max-width: 768px) {
+  .baner {
+    margin-top: 15px;
+  }
+}
 
 
 
@@ -421,5 +434,21 @@ h2, .card, .card-img-top {
 
 /* Hover efekti za ikone */
 .footer-sectionIkonice a:hover {
-  transform: scale(2.5);  /* Uvećava ikonu pri prelasku kursora */
+  transform: scale(2.0);  /* Uvećava ikonu pri prelasku kursora */
+}
+
+
+
+
+/* CSS fajl (npr. styles.css) */
+.custom-link {
+  color: #c65A28;
+ 
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.custom-link:hover {
+  transform: scale(1.1) !important;
 }

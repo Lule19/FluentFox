@@ -5,6 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../App.css"; 
 import logo2 from "../asets/logo2.jpg";
+import logo4 from "../asets/logo4.jpg";
+
+
 import { Link } from "react-router-dom"; // Ispravljeno na "react-router-dom"
 
 const CustomNav = () => {
@@ -42,7 +45,7 @@ const CustomNav = () => {
             <Container>
                 <Navbar.Brand href="/">
                     <img className="logo"
-                        src={logo2}
+                        src={logo4}
                         alt="Logo"
                         width="130"
                         height="145"
