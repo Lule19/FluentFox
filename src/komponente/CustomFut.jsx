@@ -48,8 +48,8 @@ const CustomFut = () => {
                 <img className="baner"
                         src={baner}
                         alt="Logo"
-                        width="155"
-                        height="55"
+                        width="175"
+                        height="75"
                 />
 
 
