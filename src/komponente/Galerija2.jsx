@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Modal, Button } from 'react-bootstrap';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Putanje ka slikama unutar 'src/assets'
