@@ -8,8 +8,6 @@ import Card from 'react-bootstrap/Card';
 import myImage from './asets/naslovnaN2.jpg';
 import milica from './asets/milicaN.jpg';
 import jelisaveta from './asets/jelisavetaN.jpg';
-import irena from './asets/irenaN.jpg';
-import Ema from './asets/Ema.jpg';
 
 
 import Carousel from 'react-bootstrap/Carousel';
@@ -64,9 +62,20 @@ function ScrollToHashElement() {
   return null;
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <ScrollToHashElement />
       <div>
         <CustomNav />
@@ -149,11 +158,11 @@ function App() {
   <Carousel interval={4000} className="carousel-fade">
 
   <Carousel.Item className="carousel-stvar">
-    <a href="/jezici">
+    <Link to="/jezici">
     <img
       className="d-block"
       src={image6}
-      alt="First slide"
+      alt="Programi za decu"
       style={{
         objectFit: "cover",
         width: "100vw",
@@ -165,15 +174,15 @@ function App() {
       <h3>Programi za decu</h3>
       <p>Programi prilagođeni svim uzrastima</p>
     </Carousel.Caption>
-    </a>
+    </Link>
   </Carousel.Item>
 
   <Carousel.Item className="carousel-stvar">
-    <a href="/jeziciOdrasli">
+    <Link to="/jeziciOdrasli">
     <img
       className="d-block"
       src={image9}
-      alt="Second slide"
+      alt="Programi za odrasle"
       style={{
         objectFit: "cover",
         width: "100vw",
@@ -186,15 +195,15 @@ function App() {
       <p>Programi za studente i zaposlene</p>
     </Carousel.Caption>
 
-    </a>
+    </Link>
   </Carousel.Item>
 
   <Carousel.Item className="carousel-stvar">
-    <a href="/onlineNastava">
+    <Link to="/onlineNastava">
     <img
       className="d-block"
       src={onlineN}
-      alt="Third slide"
+      alt="Online nastava"
       style={{
         objectFit: "cover",
         width: "100vw",
@@ -206,7 +215,7 @@ function App() {
       <h3>Online programi</h3>
       <p>Učite iz udobnosti Vašeg doma</p>
     </Carousel.Caption>
-    </a>
+    </Link>
   </Carousel.Item>
 </Carousel>
 
