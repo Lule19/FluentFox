@@ -20,10 +20,10 @@ function OnlineNastava() {
           overflow: "hidden", // Prevent horizontal scrolling
         }}
       >
-        <h1 style={{ color: "rgba(39,38,98,255)", textAlign: "center" }}>
-          <strong>Online nastava</strong>
-        </h1>
-        <br />
+        <div className="text-center mb-5">
+           <h2 className="section-title text-uppercase">Online nastava</h2>
+        </div>
+        
 
         <Card className="mb-4 p-3" style={{ backgroundColor: "transparent", border: "none" }}>
           {/* Remove background from Row */}
@@ -33,7 +33,7 @@ function OnlineNastava() {
                 <Card.Title style={{ color: 'rgba(39,38,98,255)', fontSize: '25px', lineHeight: '1.6' }}>
                   <strong>Učenje iz udobnosti Vašeg doma</strong>
                 </Card.Title>
-                <Card.Text style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
+                <div className="text-justify-custom">
                   Naša škola stranih jezika nudi online programe engleskog i nemačkog jezika. <br></br>
 
                   Engleski jezik učimo u manjim grupama, dva puta nedeljno po sat vremena.<br></br>
@@ -43,7 +43,7 @@ function OnlineNastava() {
                   Nastava je u popodnevnim terminima, kako bi bila pogodna za studente i zaposlene polaznike. <br></br>
 
                   Učite engleski i nemački jezik u udobnosti svog doma uz podršku naših predavača! <br></br>
-                </Card.Text>
+                </div>
               </Card.Body>
             </Col>
             <Col md={6}>

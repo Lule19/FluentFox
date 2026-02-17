@@ -42,11 +42,13 @@ function Lokacija() {
           textAlign: "center",
         }}
       >
-        <h1 style={{ color: 'rgba(39,38,98,255)' }}><strong>Lokacija naše škole</strong></h1>
+        <div className="text-center mb-5">
+           <h2 className="section-title text-uppercase">Lokacija naše škole</h2>
+        </div>
 
         {/* Kontakt informacije */}
-        <div>
-          <h4 style={{ color: 'rgba(39,38,98,255)' }}>Knjaza Miloša 144, 34300 Aranđelovac</h4>
+        <div className="mb-4">
+          <h4 className="section-subtitle text-center">Knjaza Miloša 144, 34300 Aranđelovac</h4>
         </div>
 
         {/* Mapa */}

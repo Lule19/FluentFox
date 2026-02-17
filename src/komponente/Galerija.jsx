@@ -64,7 +64,9 @@ const Gallery = () => {
   return (
     <div className='font'>
     <div className="container mt-5">
-      <h1 style={{ color: 'rgba(39,38,98,255)' }} className="text-center mb-5"><strong>Posebni momenti sa naših časova</strong></h1>
+      <div className="text-center mb-5">
+        <h2 className="section-title text-uppercase">Posebni momenti sa naših časova</h2>
+      </div>
       <div className="row">
         {images.map((image, index) => (
           <motion.div 

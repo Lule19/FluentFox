@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import CustomNav from './komponente/CustomNav';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -90,8 +91,14 @@ function App() {
                 <Card.Img variant="top" src={myImage} />
             </Card>
 
-            <div className="container mt-5 mb-5">
-              <h2 className="text-center mb-4" style={{ color: "rgba(39,38,98,255)", fontWeight: "bold", fontSize: "2.5rem" }}>Novosti</h2>
+            <motion.div 
+              className="container mt-5 mb-5"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="section-title text-center text-uppercase w-100" style={{display: 'block'}}>Novosti</h2>
               <Row className="justify-content-center">
                 <Col md={6} lg={5} className="mb-4">
                   <Card className="h-100 shadow-sm border-0 hover-card" style={{ borderRadius: "15px", backgroundColor: "#fff" }}>
@@ -115,7 +122,7 @@ function App() {
                         Otkrijte svoju kreativnost u opuštenoj atmosferi uz stručno vođenje...
                       </Card.Text>
                       <div className="mt-auto">
-                        <Link to="/novosti" className="btn btn-outline-primary rounded-pill px-4" style={{ borderColor: "#c65A28", color: "#c65A28" }}>
+                        <Link to="/novosti" className="btn-outline-custom">
                           Saznajte više <i className="fas fa-arrow-right ms-2"></i>
                         </Link>
                       </div>
@@ -145,7 +152,7 @@ function App() {
                         Novi program u našoj školi! Prilagođeno početnicima i onima sa predznanjem...
                       </Card.Text>
                       <div className="mt-auto">
-                        <Link to="/novosti" className="btn btn-outline-primary rounded-pill px-4" style={{ borderColor: "#c65A28", color: "#c65A28" }}>
+                        <Link to="/novosti" className="btn-outline-custom">
                           Saznajte više <i className="fas fa-arrow-right ms-2"></i>
                         </Link>
                       </div>
@@ -153,7 +160,7 @@ function App() {
                   </Card>
                 </Col>
               </Row>
-            </div>
+            </motion.div>
 
   <Carousel interval={4000} className="carousel-fade">
 
@@ -223,51 +230,55 @@ function App() {
 
 
 
-  <div id="onama" className="container mt-4">
-    <h2 style={{ color: 'rgba(39,38,98,255)', textAlign: 'center', fontWeight: 'bold' }}>
-      Dobro došli u FluentFox, školu stranih jezika za decu i odrasle iz Aranđelovca!
-    </h2>
-
-
-    <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
+  <div id="onama" className="container mt-5 mb-5">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-center"
+    >
+      <h2 className="section-title">
+        Dobro došli u <span style={{ color: '#c65A28' }}>FluentFox</span>
+      </h2>
+      <p className="text-center text-muted mb-4" style={{ fontSize: '1.2rem' }}>Škola stranih jezika za decu i odrasle u Aranđelovcu</p>
+      
+      <div className="row justify-content-center">
+        <div className="col-lg-10">
+           <p className="text-justify-custom">
       <strong>“FluentFox”</strong> je škola stranih jezika osnovana 2024. godine sa sedištem u Aranđelovcu. 
       Posvećeni smo pružanju visokokvalitetnog obrazovanja iz oblasti jezika i komunikacije za sve uzraste.
     </p>
 
-    <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
-      Naši predavači su profesionalni, iskusni i posvećeni svom poslu. 
-      Nastavu vode uz primenu savremenih metoda i tehnika podučavanja, koristeći najmodernije materijale 
-      kako bi svaki čas bio zanimljiv, efikasan i inspirativan.
-    </p>
+          <p className="text-justify-custom">
+            Naši predavači su profesionalni, iskusni i posvećeni svom poslu. 
+            Nastavu vode uz primenu savremenih metoda i tehnika podučavanja, koristeći najmodernije materijale 
+            kako bi svaki čas bio zanimljiv, efikasan i inspirativan.
+          </p>
 
-    <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
-      Danas je poznavanje stranih jezika ne samo prednost, već i neophodnost. 
-      Zbog toga težimo da svaki naš polaznik postigne izvanredne rezultate i stekne veštine koje će mu pomoći 
-      da uspešno komunicira u svim sferama života.
-    </p>
+          <p className="text-justify-custom">
+            Danas je poznavanje stranih jezika ne samo prednost, već i neophodnost. 
+            Zbog toga težimo da svaki naš polaznik postigne izvanredne rezultate i stekne veštine koje će mu pomoći 
+            da uspešno komunicira u svim sferama života.
+          </p>
 
-    <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
-      Bilo da želite da naučite <strong>engleski, nemački</strong> ili <strong>španski</strong> jezik, 
-      u školi “FluentFox” pronaći ćete kurs koji odgovara Vašim potrebama ili potrebama Vašeg deteta.
-    </p>
+          <p className="text-justify-custom">
+            Bilo da želite da naučite <strong>engleski, nemački</strong> ili <strong>španski</strong> jezik, 
+            u školi “FluentFox” pronaći ćete kurs koji odgovara Vašim potrebama ili potrebama Vašeg deteta.
+          </p>
+        </div>
+      </div>
+    </motion.div>
 
-    <p style={{ textAlign: 'center', marginTop: '20px' }}>
-  <Link 
-    to="/lokacija#top" 
-    onClick={() => window.scrollTo(0, 0)} // Pomeri na vrh stranice
-    style={{ 
-      color: 'white', 
-      backgroundColor: 'rgba(39,38,98,255)', 
-      padding: '10px 20px', 
-      borderRadius: '5px', 
-      textDecoration: 'none',
-      fontWeight: 'bold'
-    }}
-  >
-    Lokacija naše škole
-  </Link>
-</p>
-
+    <div className="text-center mt-5">
+      <Link 
+        to="/lokacija#top" 
+        onClick={() => window.scrollTo(0, 0)} 
+        className="btn-custom"
+      >
+         Lokacija naše škole <i className="fas fa-map-marker-alt ms-2"></i>
+      </Link>
+    </div>
   </div>
 </div>
 
@@ -275,9 +286,17 @@ function App() {
               <Gallery />
               <hr />
 
-              <div id="nastavnice" className="centriranje">
-                <div className="container mt-4">
-                  <h1 style={{ color: 'rgba(39,38,98,255)' }}><strong>Osnivači</strong></h1>
+              <motion.div 
+                id="nastavnice" 
+                className="container mt-5 mb-5 pb-5"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <div className="text-center mb-5">
+                  <h2 className="section-title text-uppercase">Osnivači</h2>
+                </div>
                   
 
                   <Container>
@@ -299,8 +318,7 @@ function App() {
 
 
                   </Container>
-                </div>
-              </div>
+              </motion.div>
 
               
             </>

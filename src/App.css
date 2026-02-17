@@ -231,13 +231,27 @@ h2, .card, .card-img-top {
 
 
 .carousel-opis {
-  background: #c65a2870; /* Poluprovidna crna pozadina */
-  padding: 5px 15px; /* Smanjen padding */
-  border-radius: 8px; /* Zaobljeni uglovi */
-  max-width: 50%; /* Ograničava širinu caption-a */
-  margin: 0 auto; /* Centriranje */
-  font-family: 'POPPINS','sans-serif';
-  
+  background: rgba(198, 90, 40, 0.35); /* More transparent orange */
+  padding: 15px 30px;
+  border-radius: 4px;
+  max-width: 50%; /* Narrower on desktop */
+  margin: 0 auto 40px auto;
+  font-family: 'Poppins', sans-serif;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-bottom: 3px solid rgba(39, 38, 98, 0.6);
+}
+
+.carousel-opis h3 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.carousel-opis p {
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .carousel-stvar img {
@@ -274,18 +288,24 @@ h2, .card, .card-img-top {
   }
 
   .carousel-opis {
-    width: 100%;
-    height: 110px;
+    width: 60%; /* Smanjena širina i centrirana */
+    max-width: none;
+    height: 30%;;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    left: 20%; /* Centriranje: 20% + 60% + 20% = 100% */
+    right: 20%;
   }
 
   .carousel-opis h3 {
-    font-size: 16px !important; /* Smanjen naslov */
-    margin-bottom: 5px !important; /* Manji razmak ispod naslova */
+    font-size: 1rem !important;
+    margin-bottom: 5px !important;
   }
 
   .carousel-opis p {
-    font-size: 12px !important; /* Smanjen opis */
-    margin-bottom: 5 !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -452,3 +472,99 @@ h2, .card, .card-img-top {
 .custom-link:hover {
   transform: scale(1.1) !important;
 }
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* --- Added for Modern Homepage --- */
+.section-title {
+  color: rgba(39,38,98,255);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #c65A28;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.text-justify-custom {
+  color: rgba(39,38,98,255);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.btn-custom {
+  display: inline-block;
+  background-color: rgba(39,38,98,255);
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #c65A28;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn-outline-custom {
+  color: #c65A28;
+  border: 2px solid #c65A28;
+  border-radius: 50px;
+  padding: 8px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: transparent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-outline-custom:hover {
+  background-color: #c65A28;
+  color: white;
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(198, 90, 40, 0.2);
+}
+
+@media (max-width: 768px) {
+  .text-justify-custom {
+    text-align: left; 
+    font-size: 1rem;
+  }
+}
+
+.section-subtitle {
+  color: rgba(39,38,98,255);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+

@@ -23,19 +23,20 @@ function JeziciCambridge() {
           alignItems: "center", // Center content horizontally
         }}
       >
-        
-        <h1 style={{ color: 'rgba(39,38,98,255)', textAlign: 'center' }}><strong>Cambridge ispiti</strong> </h1>
+        <div className="text-center mb-5">
+           <h2 className="section-title text-uppercase">Cambridge ispiti</h2>
+        </div>
         <br></br>
        <div className="">
        
-        <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>      
+        <p className="text-justify-custom">      
         Naša škola nudi specijalizovanu pripremu za Cambridge ispite za decu i odrasle. Uz podršku naših predavača i savremene metode podučavanja ostvarite izuzetne rezultate na ispitima i unapredite svoje jezičke veštine. 
         Bilo da se pripremate za osnovni ili napredni nivo, naš program je dizajniran da pruži podršku i maksimalnu efikasnost, otvarajući Vam vrata međunarodnih mogućnosti i profesionalnog uspeha.
         </p>
         
         <br></br>
         
-        <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
+        <p className="text-justify-custom">
   Za više informacija posetite sledeće linkove za detaljan opis svih  
   <a href="https://www.cambridgeenglish.org/exams-and-tests/"className="custom-link"> nivoa ispita
   </a>,  
@@ -59,8 +60,8 @@ function JeziciCambridge() {
 
         <br></br>
 
-        <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
-        <h4><strong>Deca se mogu pripremiti za sledeće ispite:</strong></h4>
+        <div className="text-justify-custom">
+        <h4 className="section-subtitle">Deca se mogu pripremiti za sledeće ispite:</h4>
         <br></br>
        
         
@@ -103,7 +104,7 @@ function JeziciCambridge() {
 <br></br>
 <br></br>
 <br></br>
-<h4><strong>Odrasli se mogu priremiti za sledeće ispite:</strong></h4>
+<h4 className="section-subtitle">Odrasli se mogu priremiti za sledeće ispite:</h4>
 <br></br>
 
 
@@ -117,7 +118,7 @@ function JeziciCambridge() {
 <strong>B2 First   </strong>je ispit engleskog jezika koji odgovara višem srednjem nivou B2. Namenjen je kandidatima koji žele da potvrde svoju sposobnost da komuniciraju na engleskom jeziku u različitim svakodnevnim i poslovnim situacijama. Ovo je priznati globalni ispit koji se često traži u obrazovnim institucijama i kompanijama. Pruža kandidatu dokaz o jezičkim veštinama i otvara vrata za dalji akademski i profesionalni razvoj.
 
        
-        </p>
+        </div>
         
         
         

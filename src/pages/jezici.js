@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 
 import lija7 from "../asets/lija7.jpg";
 import engleski from "../asets/engleskiD.jpg";
-import nemacki from "../asets/nemackiD.jpg";
+import francuski from "../asets/francuskiD.jpg";
 import spanski from "../asets/spanskiD.jpg";
 
 import "../App.css";
@@ -24,9 +24,11 @@ function Jezici() {
         }}
       >
 
-    <div className="">
-       <h1 style={{ color: 'rgba(39,38,98,255)', textAlign: 'center' }}><strong>Programi za decu</strong> </h1>
-        <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
+    <div className="mb-5">
+       <div className="text-center mb-4">
+          <h2 className="section-title text-uppercase">Programi za decu</h2>
+       </div>
+        <p className="text-justify-custom">
         Idealno vreme za početak učenja stranih jezika kod dece je sa 4 godine, kada su
 dovoljno odrasla da je moguće primeniti odgovarajuću metodiku u nastavi, ali i
 dalje dovoljno mala da uče kroz igru i zabavu, ne shvatajući to kao ozbiljan i težak
@@ -88,14 +90,14 @@ budu samostalniji.
 
             <Col xs={12} md={4} className="d-flex justify-content-center mb-4">
               <Card style={{ width: "23rem" }}>
-                <Card.Img variant="top" src={nemacki} className="card-image" />
+                <Card.Img variant="top" src={francuski} className="card-image" />
                 <Card.Body>
-                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Nemački jezik za decu</strong></Card.Title>
+                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Francuski jezik za decu</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
                     Trajanje programa <strong>tokom cele školske godine</strong> <br></br>
                     Trajanje casova: <br></br>
                     Deca školskog uzrasta <strong>1h</strong> <br></br>
-                    Dva časa nedeljno
+                    Jedan ili dva časa nedeljno ili jedan dvočas nedeljno
                   </Card.Text>
                   
                 </Card.Body>

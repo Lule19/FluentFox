@@ -54,9 +54,9 @@ function Novosti() {
           borderRadius: "15px",
         }}
       >
-        <h1 style={{ color: "rgba(39,38,98,255)", textAlign: "center", marginBottom: "30px", fontWeight: "bold" }}>
-          <strong>Novosti</strong>
-        </h1>
+        <div className="text-center mb-5">
+           <h2 className="section-title text-uppercase">Novosti</h2>
+        </div>
 
         <Container>
           <Row className="justify-content-center">
@@ -70,7 +70,7 @@ function Novosti() {
                      <div>
                         <Card.Title style={{ color: "rgba(39,38,98,255)", fontWeight: "bold", fontSize: "1.5rem" }}>{news.title}</Card.Title>
                         <Card.Subtitle className="mb-3 text-muted" style={{ fontWeight: "500" }}>{news.subtitle}</Card.Subtitle>
-                        <Card.Text as="div" style={{ color: "#555", fontSize: "1.1rem", lineHeight: "1.6" }}>
+                        <Card.Text as="div" className="text-justify-custom" style={{ color: "#555", marginBottom: 0 }}>
                           {news.content}
                         </Card.Text>
                      </div>

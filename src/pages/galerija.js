@@ -21,8 +21,9 @@ function Galerija() {
         }}
       >
 
-<h1 style={{ color: "rgba(39,38,98,255)" }}><strong>Galerija slika</strong>
-</h1>
+        <div className="text-center mb-5">
+           <h2 className="section-title text-uppercase">Galerija slika</h2>
+        </div>
 
 <Gallery2></Gallery2>
 

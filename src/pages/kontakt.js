@@ -53,11 +53,11 @@ function Kontakti() {
         textAlign: "center",
       }}
     >
-      <h1 style={{ marginBottom: "20px", color: "rgba(39,38,98,255)" }}>
-        <strong>Kontaktirajte nas</strong>
-      </h1>
+      <div className="text-center mb-5">
+         <h2 className="section-title text-uppercase">Kontaktirajte nas</h2>
+      </div>
 
-      <h3 style={{color: "rgba(39,38,98,255)"}} >Pošaljite nam poruku putem forme</h3>
+      <h3 className="section-subtitle mb-4 text-center">Pošaljite nam poruku putem forme</h3>
 
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <label><strong>Vaše ime i prezime</strong></label>
@@ -81,11 +81,11 @@ function Kontakti() {
 
     
     
-      <h4 style={{marginTop: "20px", color: "rgba(39,38,98,255)"}} >Naš kontakt</h4>
+      <h4 className="section-subtitle mt-4 text-center">Naš kontakt</h4>
       <p style={{color:"#c65A28", fontSize: "20px"}}><i className="fas fa-envelope mr-3"></i> fluentfox.ar@gmail.com</p>
     <p style={{color:"#c65A28", fontSize: "20px"}}><i className="fas fa-phone mr-3"></i> 𝟎𝟔𝟒/𝟑𝟏-𝟑𝟕-𝟗𝟗𝟏</p>
 
-      <h4 style={{marginTop: "20px", color: "rgba(39,38,98,255)"}} >Možete nas pronaći i na društvenim mrežama</h4>
+      <h4 className="section-subtitle mt-4 text-center">Možete nas pronaći i na društvenim mrežama</h4>
             <div className='footer-sectionIkonice'>
             <a href="https://www.facebook.com/happykidscentertopola?locale=sr_RS" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f" style={{ fontSize: '2.1rem', color: '#c65A28' }}></i>

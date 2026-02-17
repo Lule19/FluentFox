@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 
 import lija7 from "../asets/lija7.jpg";
 import engleski from "../asets/engleskiO.jpg";
-import nemacki from "../asets/nemackiO.jpg";
+import francuski from "../asets/francuska.jpg";
 import spanski from "../asets/spanskiO.jpg";
 
 import "../App.css";
@@ -23,9 +23,11 @@ function JeziciOdrasli() {
           padding: "20px",
         }}
       >
-       <div className="">
-       <h1 style={{ color: 'rgba(39,38,98,255)', textAlign: 'center' }}><strong>Programi za odrasle</strong> </h1>
-        <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6', textAlign: 'justify' }}>
+       <div className="mb-5">
+       <div className="text-center mb-4">
+          <h2 className="section-title text-uppercase">Programi za odrasle</h2>
+       </div>
+        <p className="text-justify-custom">
         Naša škola stranih jezika nudi širok spektar kurseva, od početnih do naprednih,
 prilagođenih potrebama odraslih polaznika, uključujući i studente. Bilo da želite
 da unapredite svoje jezičke veštine iz poslovnih razloga, putovanja, ili lične
@@ -84,14 +86,18 @@ situacijama.
 
             <Col xs={12} md={4} className="d-flex justify-content-center mb-4">
               <Card style={{ width: "23rem" }}>
-                <Card.Img variant="top" src={nemacki} className="card-image" />
+                <Card.Img variant="top" src={francuski} className="card-image" />
                 <Card.Body>
-                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Nemački jezik za odrasle</strong></Card.Title>
+                  <Card.Title style={{ color: "rgba(39,38,98,255)" }}><strong>Francuski jezik za odrasle</strong></Card.Title>
                   <Card.Text style={{ color: "rgba(39,38,98,255)" }}>
-                  Trajanje programa <strong>od 3 do 4 meseca</strong> <br></br>
                   
-                  Trajanje časa <strong>2h (dvočas)</strong>  <br></br>
-                  Dva dvočasa nedeljno<br></br>
+       
+                  
+                  
+                  Trajanje programa <strong>tokom cele školske godine</strong> <br></br>
+                  
+                  Trajanje časa <strong>1h</strong>  <br></br>
+                  Dva časa ili jedan dvočas nedeljno<br></br>
                   <br></br>
                   </Card.Text>
                   
