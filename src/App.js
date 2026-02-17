@@ -40,9 +40,10 @@ import JeziciOdrasli from "./pages/jeziciOdrasli";
 import JeziciCambridge from "./pages/jeziciCambridge";
 import JeziciDaf from "./pages/jeziciDaf";
 import OnlineNastava from "./pages/onlineNastava";
+import Novosti from "./pages/novosti";
 
 
-import NotFound from "./NotFound"; 
+import NotFound from "./NotFound";  
 
 import { Link } from "react-router-dom";
 
@@ -79,6 +80,71 @@ function App() {
             <Card>
                 <Card.Img variant="top" src={myImage} />
             </Card>
+
+            <div className="container mt-5 mb-5">
+              <h2 className="text-center mb-4" style={{ color: "rgba(39,38,98,255)", fontWeight: "bold", fontSize: "2.5rem" }}>Novosti</h2>
+              <Row className="justify-content-center">
+                <Col md={6} lg={5} className="mb-4">
+                  <Card className="h-100 shadow-sm border-0 hover-card" style={{ borderRadius: "15px", backgroundColor: "#fff" }}>
+                    <Card.Body className="d-flex flex-column align-items-center text-center p-4">
+                      <div className="mb-3" style={{ 
+                        width: "60px", 
+                        height: "60px", 
+                        borderRadius: "50%", 
+                        backgroundColor: "rgba(198, 90, 40, 0.1)", 
+                        display: "flex", 
+                        alignItems: "center", 
+                        justifyContent: "center" 
+                      }}>
+                        <i className="fas fa-palette" style={{ fontSize: "1.5rem", color: "#c65A28" }}></i>
+                      </div>
+                      <Card.Title style={{ color: "rgba(39,38,98,255)", fontWeight: "bold", fontSize: "1.25rem" }}>
+                        Crtanje i slikanje za decu i odrasle
+                      </Card.Title>
+                      <Card.Subtitle className="mb-3 text-muted">Svake subote</Card.Subtitle>
+                      <Card.Text style={{ color: "#555" }}>
+                        Otkrijte svoju kreativnost u opuštenoj atmosferi uz stručno vođenje...
+                      </Card.Text>
+                      <div className="mt-auto">
+                        <Link to="/novosti" className="btn btn-outline-primary rounded-pill px-4" style={{ borderColor: "#c65A28", color: "#c65A28" }}>
+                          Saznajte više <i className="fas fa-arrow-right ms-2"></i>
+                        </Link>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+
+                <Col md={6} lg={5} className="mb-4">
+                  <Card className="h-100 shadow-sm border-0 hover-card" style={{ borderRadius: "15px", backgroundColor: "#fff" }}>
+                    <Card.Body className="d-flex flex-column align-items-center text-center p-4">
+                      <div className="mb-3" style={{ 
+                        width: "60px", 
+                        height: "60px", 
+                        borderRadius: "50%", 
+                        backgroundColor: "rgba(198, 90, 40, 0.1)", 
+                        display: "flex", 
+                        alignItems: "center", 
+                        justifyContent: "center" 
+                      }}>
+                        <i className="far fa-comments" style={{ fontSize: "1.5rem", color: "#c65A28" }}></i>
+                      </div>
+                      <Card.Title style={{ color: "rgba(39,38,98,255)", fontWeight: "bold", fontSize: "1.25rem" }}>
+                        Časovi francuskog jezika
+                      </Card.Title>
+                      <Card.Subtitle className="mb-3 text-muted">Za sve uzraste</Card.Subtitle>
+                      <Card.Text style={{ color: "#555" }}>
+                        Novi program u našoj školi! Prilagođeno početnicima i onima sa predznanjem...
+                      </Card.Text>
+                      <div className="mt-auto">
+                        <Link to="/novosti" className="btn btn-outline-primary rounded-pill px-4" style={{ borderColor: "#c65A28", color: "#c65A28" }}>
+                          Saznajte više <i className="fas fa-arrow-right ms-2"></i>
+                        </Link>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </div>
 
   <Carousel interval={4000} className="carousel-fade">
 
@@ -202,8 +268,8 @@ function App() {
 
               <div id="nastavnice" className="centriranje">
                 <div className="container mt-4">
-                  <h1 style={{ color: 'rgba(39,38,98,255)' }}><strong>Predavači</strong></h1>
-                  <p style={{ color: 'rgba(39,38,98,255)', fontSize: '18px', lineHeight: '1.6' }}>U našoj školi trenutno su zaposlena četiri predavača</p>
+                  <h1 style={{ color: 'rgba(39,38,98,255)' }}><strong>Osnivači</strong></h1>
+                  
 
                   <Container>
 
@@ -212,8 +278,7 @@ function App() {
   {[  
     { src: milica, name: "Milica Ćirović", text: <>Španski jezik za decu, srednjoškolce i odrasle <br /> Engleski jezik za decu i odrasle</> },
     { src: jelisaveta, name: "Jelisaveta Miladinović", text: "Engleski jezik za srednjoškolce, studente i odrasle" },
-    { src: irena, name: "Irena Mladenović", text: "Nemački jezik za decu, srednjoškolce i odrasle" },
-    { src: Ema, name: "Emilija Stanković", text: "Poslovni engleski" }
+    
   ].map((teacher, index) => (
     <Col key={index} xs={12} sm={6} lg={3} className="d-flex flex-column align-items-center">
       <Image src={teacher.src} roundedCircle className="custom-image" />
@@ -242,6 +307,7 @@ function App() {
           <Route path="/jeziciCambridge" element={<JeziciCambridge />} />
           <Route path="/jeziciDaf" element={<JeziciDaf />} />
           <Route path="/onlineNastava" element={<OnlineNastava />} />
+          <Route path="/novosti" element={<Novosti />} />
           <Route path="*" element={<NotFound />} />
           
         </Routes>
