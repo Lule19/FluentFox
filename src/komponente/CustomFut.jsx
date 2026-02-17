@@ -2,7 +2,6 @@ import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-import logo2 from "../asets/logo2.jpg";
 import logo4 from "../asets/logo4.jpg";
 import baner from "../asets/baner.jpg"
 import "../App.css";
@@ -91,6 +90,7 @@ const CustomFut = () => {
               <h4 align="center"> Knjaza Miloša 144,  <br></br>34300 Aranđelovac </h4>
               <div align="center" className="lokacija">
                 <iframe 
+                  title="Mapa lokacije škole"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178.5978274137721!2d20.681380004014397!3d44.257189724672386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47574b8f20986185%3A0x136890f5f0dfbc6a!2sHappy%20Kids%20Center!5e0!3m2!1ssr!2srs!4v1706109770033!5m2!1ssr!2srs"
                   width="100%"
                   height="200"

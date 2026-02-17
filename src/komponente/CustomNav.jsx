@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../App.css"; 
-import logo2 from "../asets/logo2.jpg";
 import logo4 from "../asets/logo4.jpg";
 
 

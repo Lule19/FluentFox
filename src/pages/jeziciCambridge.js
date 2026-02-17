@@ -1,13 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-
 import lija7 from "../asets/lija7.jpg";
-import lija2 from "../asets/lija2.jpg";
-import engleski from "../asets/engleski.jpg";
-import nemacki from "../asets/nemacki.jpg";
-import spanski from "../asets/spanski.jpg";
 
 import "../App.css";
 

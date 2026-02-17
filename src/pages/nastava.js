@@ -1,6 +1,6 @@
 import React from "react";
 import lija6 from "../asets/lija6.jpg";  // Correctly import the image
-import on from "../asets/on.jpg";  // Correctly import the image
+
 
 
 

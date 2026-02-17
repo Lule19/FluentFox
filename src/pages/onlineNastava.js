@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import Button from "react-bootstrap/Button";
 import lija7 from "../asets/lija7.jpg";
 import "../App.css";
 import on from "../asets/on.jpg";  // Correctly import the image

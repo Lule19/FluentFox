@@ -4,12 +4,7 @@ import React, { useState, useEffect } from 'react';
 import image1 from '../asets/1.jpg';
 import image2 from '../asets/2.jpg';
 import image3 from '../asets/3.jpg';
-import image4 from '../asets/4.jpg';
 import image5 from '../asets/5.jpg';
-import image6 from '../asets/6.jpg';
-import image7 from '../asets/7.jpg';
-import image8 from '../asets/8.jpg';
-import image9 from '../asets/9.jpg';
 import image10 from '../asets/10.jpg';
 
 import image16 from "../asets/16.jpg";

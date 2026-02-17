@@ -15,8 +15,6 @@ import Ema from './asets/Ema.jpg';
 import Carousel from 'react-bootstrap/Carousel';
 
 import image9 from "./asets/9.jpg";
-import image10 from "./asets/10.jpg";
-import image5 from "./asets/5.jpg";
 import image6 from "./asets/6.jpg";
 import onlineN from "./asets/laptopfluentfox.jpg";
 
