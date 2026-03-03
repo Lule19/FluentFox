@@ -28,6 +28,8 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
+import { newsData } from "./newsData";
+
 import Gallery from "./komponente/Galerija";
 
 import Jezici from "./pages/jezici";
@@ -37,6 +39,7 @@ import Galerija from "./pages/galerija";
 import Nastava from "./pages/nastava";
 import JeziciOdrasli from "./pages/jeziciOdrasli";
 import JeziciCambridge from "./pages/jeziciCambridge";
+import JeziciIelts from "./pages/jeziciIelts";
 import JeziciDaf from "./pages/jeziciDaf";
 import OnlineNastava from "./pages/onlineNastava";
 import Novosti from "./pages/novosti";
@@ -100,65 +103,37 @@ function App() {
             >
               <h2 className="section-title text-center text-uppercase w-100" style={{display: 'block'}}>Novosti</h2>
               <Row className="justify-content-center">
-                <Col md={6} lg={5} className="mb-4">
-                  <Card className="h-100 shadow-sm border-0 hover-card" style={{ borderRadius: "15px", backgroundColor: "#fff" }}>
-                    <Card.Body className="d-flex flex-column align-items-center text-center p-4">
-                      <div className="mb-3" style={{ 
-                        width: "60px", 
-                        height: "60px", 
-                        borderRadius: "50%", 
-                        backgroundColor: "rgba(198, 90, 40, 0.1)", 
-                        display: "flex", 
-                        alignItems: "center", 
-                        justifyContent: "center" 
-                      }}>
-                        <i className="fas fa-palette" style={{ fontSize: "1.5rem", color: "#c65A28" }}></i>
-                      </div>
-                      <Card.Title style={{ color: "rgba(39,38,98,255)", fontWeight: "bold", fontSize: "1.25rem" }}>
-                        Crtanje i slikanje za decu i odrasle
-                      </Card.Title>
-                      <Card.Subtitle className="mb-3 text-muted">Svake subote</Card.Subtitle>
-                      <Card.Text style={{ color: "#555" }}>
-                        Otkrijte svoju kreativnost u opuštenoj atmosferi uz stručno vođenje...
-                      </Card.Text>
-                      <div className="mt-auto">
-                        <Link to="/novosti" className="btn-outline-custom">
-                          Saznajte više <i className="fas fa-arrow-right ms-2"></i>
-                        </Link>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </Col>
-
-                <Col md={6} lg={5} className="mb-4">
-                  <Card className="h-100 shadow-sm border-0 hover-card" style={{ borderRadius: "15px", backgroundColor: "#fff" }}>
-                    <Card.Body className="d-flex flex-column align-items-center text-center p-4">
-                      <div className="mb-3" style={{ 
-                        width: "60px", 
-                        height: "60px", 
-                        borderRadius: "50%", 
-                        backgroundColor: "rgba(198, 90, 40, 0.1)", 
-                        display: "flex", 
-                        alignItems: "center", 
-                        justifyContent: "center" 
-                      }}>
-                        <i className="far fa-comments" style={{ fontSize: "1.5rem", color: "#c65A28" }}></i>
-                      </div>
-                      <Card.Title style={{ color: "rgba(39,38,98,255)", fontWeight: "bold", fontSize: "1.25rem" }}>
-                        Časovi francuskog jezika
-                      </Card.Title>
-                      <Card.Subtitle className="mb-3 text-muted">Za sve uzraste</Card.Subtitle>
-                      <Card.Text style={{ color: "#555" }}>
-                        Novi program u našoj školi! Prilagođeno početnicima i onima sa predznanjem...
-                      </Card.Text>
-                      <div className="mt-auto">
-                        <Link to="/novosti" className="btn-outline-custom">
-                          Saznajte više <i className="fas fa-arrow-right ms-2"></i>
-                        </Link>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </Col>
+                {[...newsData].sort((a, b) => b.id - a.id).slice(0, 3).map((news) => (
+                  <Col key={news.id} md={6} lg={4} className="mb-4">
+                    <Card className="h-100 shadow-sm border-0 hover-card" style={{ borderRadius: "15px", backgroundColor: "#fff" }}>
+                      <Card.Body className="d-flex flex-column align-items-center text-center p-4">
+                        <div className="mb-3" style={{ 
+                          width: "60px", 
+                          height: "60px", 
+                          borderRadius: "50%", 
+                          backgroundColor: "rgba(198, 90, 40, 0.1)", 
+                          display: "flex", 
+                          alignItems: "center", 
+                          justifyContent: "center" 
+                        }}>
+                          <i className={news.icon} style={{ fontSize: "1.5rem", color: "#c65A28" }}></i>
+                        </div>
+                        <Card.Title style={{ color: "rgba(39,38,98,255)", fontWeight: "bold", fontSize: "1.25rem" }}>
+                          {news.title}
+                        </Card.Title>
+                        <Card.Subtitle className="mb-3 text-muted">{news.subtitle}</Card.Subtitle>
+                        <Card.Text style={{ color: "#555" }}>
+                          {news.summary}
+                        </Card.Text>
+                        <div className="mt-auto">
+                          <Link to="/novosti" className="btn-outline-custom">
+                            Saznajte više <i className="fas fa-arrow-right ms-2"></i>
+                          </Link>
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
               </Row>
             </motion.div>
 
@@ -332,6 +307,7 @@ function App() {
 
           <Route path="/jeziciOdrasli" element={<JeziciOdrasli />} />
           <Route path="/jeziciCambridge" element={<JeziciCambridge />} />
+          <Route path="/jeziciIelts" element={<JeziciIelts />} />
           <Route path="/jeziciDaf" element={<JeziciDaf />} />
           <Route path="/onlineNastava" element={<OnlineNastava />} />
           <Route path="/novosti" element={<Novosti />} />

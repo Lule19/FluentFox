@@ -74,8 +74,7 @@ const CustomNav = () => {
                             <NavDropdown.Item as={Link} to="/jeziciOdrasli" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>Odrasli</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/onlineNastava" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>Online nastava</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/jeziciCambridge" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>Cambridge ispiti</NavDropdown.Item>
-                           
-                           
+                            <NavDropdown.Item as={Link} to="/jeziciIelts" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>IELTS ispiti</NavDropdown.Item>
                         </NavDropdown>
 
                         <Nav.Link href="/#nastavnice" onClick={handleNavigation}>Predavači</Nav.Link>

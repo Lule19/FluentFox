@@ -3,43 +3,10 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import lija7 from "../asets/lija7.jpg"; // Using consistent background
 import "../App.css";
 
-function Novosti() {
-  const newsData = [
-    {
-      id: 1,
-      title: "Crtanje i slikanje za decu i odrasle",
-      subtitle: "Svake subote u našoj školi",
-      icon: "fas fa-palette",
-      content: (
-        <>
-          <p>
-            <strong>Crtanje i slikanje za decu i odrasle – svake subote u našoj školi.</strong>
-          </p>
-          <p>
-            Bez obzira na prethodno iskustvo, svi su dobrodošli da istraže boje, oblike i svoju maštu u opuštenoj i podsticajnoj atmosferi.
-            Rad je u malim grupama, uz stručno vođenje.
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 2,
-      title: "Časovi francuskog jezika",
-      subtitle: "Za decu i odrasle",
-      icon: "far fa-comments",
-      content: (
-        <>
-          <p>
-            <strong>Od sada u našoj školi možete pohađati časove francuskog jezika, kako za decu, tako i za odrasle.</strong>
-          </p>
-          <p>
-            Programi su prilagođeni uzrastu i nivou znanja, a časovi su namenjeni i početnicima i polaznicima sa predznanjem.
-          </p>
-        </>
-      ),
-    },
-  ];
+import { newsData } from "../newsData";
 
+function Novosti() {
+  
   return (
     <div className="font">
       <div
@@ -60,7 +27,7 @@ function Novosti() {
 
         <Container>
           <Row className="justify-content-center">
-            {newsData.map((news) => (
+            {[...newsData].sort((a, b) => b.id - a.id).map((news) => (
               <Col key={news.id} md={10} className="mb-4">
                 <Card className="shadow hover-effect" style={{ border: "none", borderRadius: "15px", overflow: "hidden" }}>
                   <Card.Body className="d-flex flex-column flex-md-row align-items-center p-4">
