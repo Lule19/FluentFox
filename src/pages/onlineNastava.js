@@ -42,7 +42,7 @@ function OnlineNastava() {
 
                   Nastava je u popodnevnim terminima, kako bi bila pogodna za studente i zaposlene polaznike. <br></br>
 
-                  Učite engleski i nemački jezik u udobnosti svog doma uz podršku naših predavača! <br></br>
+                  Učite strane jezike iz udobnosti svog doma uz podršku naših predavača! <br></br>
                 </div>
               </Card.Body>
             </Col>

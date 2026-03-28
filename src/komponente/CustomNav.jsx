@@ -77,7 +77,7 @@ const CustomNav = () => {
                             <NavDropdown.Item as={Link} to="/jeziciIelts" onClick={() => { setDropdownOpen(false); handleNavigation(); }}>IELTS ispiti</NavDropdown.Item>
                         </NavDropdown>
 
-                        <Nav.Link href="/#nastavnice" onClick={handleNavigation}>Predavači</Nav.Link>
+                        <Nav.Link href="/#nastavnice" onClick={handleNavigation}>Osnivači</Nav.Link>
                         <Nav.Link as={Link} to="/nastava" onClick={handleNavigation}>Nastava</Nav.Link>
                         <Nav.Link as={Link} to="/galerija" onClick={handleNavigation}>Galerija</Nav.Link>
                         <Nav.Link as={Link} to="/kontakt" onClick={handleNavigation}>Kontakt</Nav.Link>

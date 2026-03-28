@@ -59,7 +59,7 @@ const CustomFut = () => {
             <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-section">
              <h6 className="text-uppercase mb-4 font-weight-bold"><strong>Kontakt</strong></h6>
   <div className="footer-content">
-    <p><i className="fas fa-home mr-3"></i> Aranđelovac, Srbija</p>
+   
     <p><i className="fas fa-envelope mr-3"></i> fluentfox.ar@gmail.com</p>
     <p><i className="fas fa-phone mr-3"></i> 𝟎𝟔𝟒/𝟑𝟏-𝟑𝟕-𝟗𝟗𝟏</p>
 

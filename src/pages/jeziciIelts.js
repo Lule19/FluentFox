@@ -1,5 +1,7 @@
 import React from "react";
 import lija7 from "../asets/lija7.jpg";
+import ielts1 from "../asets/ielts.jpg";
+import ielts2 from "../asets/ielts2.jpg";
 
 import "../App.css";
 
@@ -14,9 +16,11 @@ function JeziciIelts() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          minHeight: "110vh", // Full screen height
-          padding: "20px",
-
+          backgroundAttachment: "fixed",
+          minHeight: "100vh",
+          padding: "40px 20px",
+          borderRadius: "15px",
+          boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
          
           display: "flex",
           flexDirection: "column",
@@ -25,6 +29,13 @@ function JeziciIelts() {
       >
         <div className="text-center mb-5">
            <h2 className="section-title text-uppercase">IELTS ispiti</h2>
+           <br></br>
+           <img 
+            src={ielts1} 
+            alt="IELTS logo" 
+            className="img-fluid mt-3" 
+            style={{ maxWidth: "300px", borderRadius: "8px" }}
+           />
         </div>
         <br></br>
        <div className="text-justify-custom">
@@ -100,6 +111,15 @@ function JeziciIelts() {
              ovde
           </a>.
         </p>
+
+        <div className="mt-5 pt-4 text-center">
+          <img
+            src={ielts2}
+            alt="IELTS ispit"
+            className="img-fluid rounded shadow-lg"
+            style={{ maxWidth: "600px", width: "100%", border: "5px solid white" }}
+          />
+        </div>
 
         </div>
         

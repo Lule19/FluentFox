@@ -238,7 +238,7 @@ function App() {
           </p>
 
           <p className="text-justify-custom">
-            Bilo da želite da naučite <strong>engleski, nemački</strong> ili <strong>španski</strong> jezik, 
+            Bilo da želite da naučite <strong>engleski, francuski</strong> ili <strong>španski</strong> jezik, 
             u školi “FluentFox” pronaći ćete kurs koji odgovara Vašim potrebama ili potrebama Vašeg deteta.
           </p>
         </div>
