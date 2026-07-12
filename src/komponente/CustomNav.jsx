@@ -83,6 +83,7 @@ const CustomNav = () => {
                         <Nav.Link as={Link} to="/kontakt" onClick={handleNavigation}>Kontakt</Nav.Link>
                         <Nav.Link as={Link} to="/lokacija" onClick={handleNavigation}>Lokacija</Nav.Link>
                         <Nav.Link as={Link} to="/novosti" onClick={handleNavigation}>Novosti</Nav.Link>
+                        <Nav.Link as={Link} to="/qa" onClick={handleNavigation}>QA</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

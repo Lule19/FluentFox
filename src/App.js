@@ -43,6 +43,7 @@ import JeziciIelts from "./pages/jeziciIelts";
 import JeziciDaf from "./pages/jeziciDaf";
 import OnlineNastava from "./pages/onlineNastava";
 import Novosti from "./pages/novosti";
+import QA from "./pages/qa";
 
 
 import NotFound from "./NotFound";  
@@ -311,6 +312,7 @@ function App() {
           <Route path="/jeziciDaf" element={<JeziciDaf />} />
           <Route path="/onlineNastava" element={<OnlineNastava />} />
           <Route path="/novosti" element={<Novosti />} />
+          <Route path="/qa" element={<QA />} />
           <Route path="*" element={<NotFound />} />
           
         </Routes>
